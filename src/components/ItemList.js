@@ -4,8 +4,7 @@ import "./ItemList.css"
 import { splitOrder } from "../helper/SplitOrder";
 
 const ItemList = () => {
-    const api = process.env.REACT_APP_API_URL
-    const { data, loading, error } = useFetch(api)
+    const { data, loading, error } = useFetch('https://server-oasg.onrender.com/api/items/all')
     const [selectedItems, setSelectedItems] = useState([]);
     const [orderResult, setOrderResult] = useState(null);
 
