@@ -25,7 +25,7 @@ const Home = () => {
         </h2>
 
         <div style={{ display: "flex", gap: "10px" }}>
-          <Link to="/list">
+          <Link to="/item">
             <button
               style={{
                 padding: "10px 20px",
@@ -35,7 +35,7 @@ const Home = () => {
                 width: "100px",
                 backgroundColor: "#007BFF",
               }}>
-              List
+              Item
             </button>
           </Link>
           <Link to="/anime">
